@@ -11,7 +11,16 @@
 </template>
 
 <script>
-export default {}
+import { mapState } from 'vuex'
+
+export default {
+  computed: {
+    ...mapState([
+      'data1',
+      'data2'
+    ])
+  }
+}
 </script>
 
 <style scoped>
@@ -60,10 +69,10 @@ export default {}
 
 @keyframes transitionIn {
   0% {
-    transform: translate(500px,0);
+    transform: translate(500px, 0);
   }
   100% {
-    transform: translate(0,0);
+    transform: translate(0, 0);
 
   }
 }

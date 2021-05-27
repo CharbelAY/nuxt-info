@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { largeCardSections } from '@/assets/data.js'
+import { largeCardSections } from 'assets/../assets/data'
 
 export default {
   data () {
